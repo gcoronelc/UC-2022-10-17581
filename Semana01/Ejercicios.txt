@@ -1,0 +1,18 @@
+﻿Ejericios
+============================================
+
+Ejercicio 1:
+------------------------------------
+Desarrollar un programa que permite 
+obtener el tipo de cambio de soles
+a dolares.
+
+
+Ejercicio 2:
+------------------------------------
+Desarrollar un programa que permita
+calcular los datos de una venta:
+ - Importe
+ - Impuesto
+ - Total
+

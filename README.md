@@ -1,4 +1,4 @@
-![FUNDAMENTOS DE PROGRAMACIÓN](https://raw.githubusercontent.com/gcoronelc/UC-2020-20-15795/main/img/curso.png)
+![FUNDAMENTOS DE PROGRAMACIÓN](https://raw.githubusercontent.com/gcoronelc/UC-2022-10-17581/main/img/curso.png)
 
 # FUNDAMENTOS DE PROGRAMACIÓN
 
