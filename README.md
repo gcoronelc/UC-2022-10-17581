@@ -5,7 +5,7 @@
 - Lugar: UNIVERSIDAD CONTINENTAL
 - Sede: LIMA - LOS OLIVOS
 - Horario: MIERCOLES DE 7:30 Horas a 10:40 Horas
-- Inicio: 16-AGOSTO-2021
+- Inicio: 21-MARZO-2022
 - Dirección: https://goo.gl/maps/hduPiEVMuKzR2LUQ8
 
 
