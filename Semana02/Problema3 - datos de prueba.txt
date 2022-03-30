@@ -1,0 +1,16 @@
+﻿Datos de prueba
+===========================================
+
+Entrada
+-------------------
+Sueldo base: Zapatillas
+Importe de ventas: 235.00
+
+Salida
+--------------------
+Sueldo base: 
+Comisión: 
+Sueldo neto: 
+
+
+
