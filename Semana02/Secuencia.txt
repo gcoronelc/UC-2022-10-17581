@@ -1,7 +1,17 @@
 PASOS
--------------------------------------------
-1.- Analisis de la caja negra.
-2.- Algoritmo y/o formulas
+----------------------------------------------------------------
+
+1.- Análisis de la caja negra.
+    Identificar los datos de entrada y los datos de salida.
+    
+2.- Algoritmo y/o fórmulas
+    
 3.- Datos de prueba
+    Ejemplo, para el factorial de un número:
+    Caso 1: Dato de entrada:  3  ==>  Datos de salida: 6
+    Caso 2: Dato de entrada:  0  ==>  Datos de salida: 
+    Caso 2: Dato de entrada: -1  ==>  Datos de salida: 
+
 4.- Programa
+
 5.- Ejecución y pruebas

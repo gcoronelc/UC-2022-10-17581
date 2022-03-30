@@ -1,0 +1,54 @@
+﻿Datos de prueba
+--------------------------------------
+
+Entrada
+-------------------
+Numero 1:
+Numero 2:
+
+Salida
+--------------------
+Suma: 
+Resta: 
+Producto:
+Division:
+Resto:
+
+LUIS PEDRO SALAZAR PEREZ8:16
+Datos de prueba
+--------------------------------------
+
+Entrada
+-------------------
+Numero 1: 20
+Numero 2: 4
+
+Salida
+--------------------
+Suma: 24
+Resta: 16
+Producto: 80
+Division: 5
+Resto: 0
+
+
+LEONARDO JESUS PALACIOS MARCOS8:18
+Datos de prueba
+--------------------------------------
+
+Entrada
+-------------------
+Numero 1:8
+Numero 2:5
+
+Salida
+--------------------
+Suma: 13
+Resta: 3
+Producto:40
+Division:1.6 (División real)
+Resto:3
+
+
+
+
