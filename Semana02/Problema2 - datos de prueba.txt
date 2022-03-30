@@ -1,0 +1,16 @@
+﻿Datos de prueba
+===========================================
+
+Entrada
+-------------------
+Producto: Zapatillas
+Precio: 235.00
+Cantidad: 3
+
+Salida
+--------------------
+Importe: 
+Impuesto: 
+Total: 
+
+

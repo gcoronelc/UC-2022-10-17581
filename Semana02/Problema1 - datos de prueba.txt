@@ -49,6 +49,63 @@ Producto:40
 Division:1.6 (División real)
 Resto:3
 
+VALERIA ALEXANDRA ROCA AMBULAY8:18
+Datos de prueba
+--------------------------------------
 
+Entrada
+-------------------
+Numero 1: 10
+Numero 2: 5
+
+Salida
+--------------------
+Suma: 15
+Resta: 5
+Producto: 50
+Division: 2
+Resto: 0
+
+
+
+MAYRA JIMENA CISNEROS MENDOZA8:19
+Datos de prueba
+--------------------------------------
+
+Entrada
+-------------------
+Numero 1:6
+Numero 2:3
+
+Salida
+--------------------
+Suma: 9
+Resta: 3
+Producto:18
+Division:2
+Resto:0
+
+
+
+MANYORI IPARRAGUIRRE RAMOS8:20
+Datos de prueba
+--------------------------------------
+
+Entrada
+-------------------
+Numero 1:15
+Numero 2:4
+
+Salida
+--------------------
+Suma: 19
+Resta: 11
+Producto:60
+Division:3.75
+Resto:3
+
+
+
+17581 (IKI) FUNDAMENTOS DE PROGRAMACIÓN (ASUC01312)
 
 
