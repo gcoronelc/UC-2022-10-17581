@@ -13,4 +13,88 @@ Importe:
 Impuesto: 
 Total: 
 
+LUIS PEDRO SALAZAR PEREZ9:12
+
+Datos de prueba
+--------------------------------------
+
+Entrada
+-------------------
+Producto: Poleras
+Precio: 75
+Cantidad: 4
+
+Salida
+--------------------
+Importe: 300 = precio * cantidad = 75 * 4
+Impuesto: 54 = importe * 0.18
+Total: 354 = importe + impuesto
+
+
+
+MANYORI IPARRAGUIRRE RAMOS9:13
+
+Datos de prueba
+--------------------------------------
+
+Entrada
+-------------------
+Producto:Jeans
+Precio:30.00
+Cantidad:3
+
+Salida
+--------------------
+Importe: 76.27 = total / 1.18 = 90 / 1.18
+Impuesto: 13.73 = total - importe = 90 - 76.27
+Total: 90 = precio * cantidad = 30.00 * 3
+
+
+MAYRA JIMENA CISNEROS MENDOZA9:13
+
+Entrada
+-------------------
+Producto: Audifonos
+Precio: 160
+Cantidad: 3
+
+Salida
+--------------------
+Importe: 480
+Impuesto: 86.4
+Total: 566.4
+
+
+FRANCIS luigi RODRIGUEZ YSUHUAYLAS9:13
+
+Lectura de datos
+=============================
+Precio del producto: 200
+Cantidad vendida: 10
+
+REPORTE
+=============================
+Importe:2000
+Impuesto:360
+Total:2360
+
+
+DANIEL MOSQUEIRA -NIÑO DE GUZMAN9:13
+
+Datos de prueba
+--------------------------------------
+
+Entrada
+-------------------
+Producto: mochila
+Precio: 100
+Cantidad: 2
+
+Salida
+--------------------
+Importe: 200.00
+Impuesto: 50.00
+Total: 250.00
+
+
 
