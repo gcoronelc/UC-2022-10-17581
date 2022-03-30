@@ -13,4 +13,55 @@ Comisión:
 Sueldo neto: 
 
 
+FRANCIS luigi RODRIGUEZ YSUHUAYLAS10:06
+Datos de prueba
+===========================================
+
+Entrada
+-------------------
+Sueldo base: 2000
+Importe de ventas: 1500
+
+
+Salida
+--------------------
+Sueldo base: 2000
+Comisión: 120
+Sueldo neto: 2120
+
+
+DANIEL MOSQUEIRA -NIÑO DE GUZMAN10:07
+Datos de prueba
+===============
+
+Entrada
+-------------------
+sueldo base: 1000
+importe de ventas: 300
+
+Salida
+--------------------
+sueldo base: 1000
+comision de sus ventas : 24
+sueldo neto:1024
+
+
+JUAN JOSE GONZALES DEL VALLE PEVES10:09
+Datos de prueba
+=================================
+
+Entrada
+-------------------
+Sueldo base: 2500
+Importe de ventas: 1200
+
+
+Salida
+--------------------
+Sueldo base: 2500
+Comisión: 96
+Sueldo neto: 2404
+
+
+
 
