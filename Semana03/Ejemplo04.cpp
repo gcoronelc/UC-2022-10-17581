@@ -31,8 +31,11 @@ int main(){
 	// Configuracion
 	setlocale(LC_CTYPE,"Spanish");
 	
-	int n = 3;
+	int n;
 	string dato;
+	
+	// Generar numero aleatorio
+	n = 
 	
 	switch(n){
 		case 1:
