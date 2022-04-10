@@ -1,0 +1,8 @@
+Caso 1:||
+- Nuevo sueldo
+
+Caso 2:|
+- Nuevo sueldo
+- Aumento
+
+

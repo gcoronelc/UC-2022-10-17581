@@ -8,6 +8,9 @@ int main(){
 	
 	// Variables
 	
+  
+  // Validación
+  
 	
 	// Lectura de datos
 	

@@ -1,0 +1,8 @@
+Caso 1
+- Sueldo actual
+- Nuevo sueldo
+
+Caso 2
+- Sueldo actual
+- Categoria
+
