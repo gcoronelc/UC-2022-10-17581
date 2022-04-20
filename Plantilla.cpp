@@ -9,10 +9,14 @@ int main(){
 	// Variables
 	
   
-  // Validación
+	// Lectura de datos
+	
+	
+	
+	  // Validación
   
 	
-	// Lectura de datos
+
 	
 	
 	// Proceso
