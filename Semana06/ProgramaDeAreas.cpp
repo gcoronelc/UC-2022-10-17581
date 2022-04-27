@@ -8,6 +8,7 @@ int main(){
 	
 	// Variables
 	int op; // Opción del menú
+	double ladoCuadrado, areaCuadrado;
 	
 	// Control del menú
 	do{
@@ -34,7 +35,18 @@ int main(){
 		system("cls");
 		switch(op){
 			case 1:
+				// Lectura de datos
 				cout << "Area de un cuadrado" << endl;
+				cout << "-------------------------------" << endl;
+				cout << "Lado del cuadrado: "; cin >> ladoCuadrado;
+				// Proceso
+				areaCuadrado = ladoCuadrado * ladoCuadrado;
+				// Reporte
+				cout << endl;
+				cout << "Reporte" << endl;
+				cout << "--------------------------------" << endl;
+				cout << "Area del cuadrado: " << areaCuadrado << endl;
+				cout << endl;
 				break;
 			case 2:
 				cout << "Area de un rectangulo" << endl;
