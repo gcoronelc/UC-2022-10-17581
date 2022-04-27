@@ -30,9 +30,22 @@ int main(){
 			}
 		}while(op<1 || op>4);
 		
-		// Reporte previo
-		cout << endl;
-		cout << "Opción: " << op << endl;
+		// Programando el menú
+		system("cls");
+		switch(op){
+			case 1:
+				cout << "Area de un cuadrado" << endl;
+				break;
+			case 2:
+				cout << "Area de un rectangulo" << endl;
+				break;
+			case 3:
+				cout << "Area de un triangulo" << endl;
+				break;
+			case 4:
+				cout << "Fin del programa." << endl;
+				break;	
+		}
 		
 		system("pause");
 	} while(op!=4);
