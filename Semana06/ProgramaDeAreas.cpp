@@ -45,7 +45,7 @@ int main(){
 				cout << endl;
 				cout << "Reporte" << endl;
 				cout << "--------------------------------" << endl;
-				cout << "Area del cuadrado: " << areaCuadrado << endl;
+				cout << "Area del cuadrado: " << areaCuadrado << "u2" << endl;
 				cout << endl;
 				break;
 			case 2:
