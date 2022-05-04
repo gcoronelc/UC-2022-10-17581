@@ -17,6 +17,12 @@ int main(){
 	// Inicializar variables
 	contVentas = 0;
 	
+	// Variables para el reporte
+	int contVentasA=0, contVentasB=0, contVentasC=0;	
+	int acuCamionetasA=0, acuCamionetasB=0, acuCamionetasC=0;
+	double importeA=0, importeB=0, importeC=0;
+	double comisionA=0, comisionB=0, comisionC=0;
+	
 	// Control del menú de opciones
 	do{
 		// EL MENU
@@ -50,7 +56,7 @@ int main(){
 				cout << "======================================" << endl;
 				// Leer categoría
 				do{
-					cout << "Categoría: "; cin >> categoria;
+					cout << "Categoría (A/B/C): "; cin >> categoria;
 					categoria = toupper(categoria);
 					if(categoria!='A' && categoria!='B' && categoria!='C'){
 						cout << "ERROR: La categoria es A, B o C." << endl;
@@ -82,7 +88,20 @@ int main(){
 				// Calcular venta
 				importeVenta = precio * cantidad;
 				importeComision = importeVenta * porcComision / 100.0;
-				// REPORTE
+				// Calculos del reporte total
+				contVentasA += (categoria=='A')?1:0;
+				contVentasB += (categoria=='B')?1:0;
+				contVentasC += (categoria=='C')?1:0;
+				acuCamionetasA += (categoria=='A')?cantidad:0;
+				acuCamionetasB += (categoria=='B')?cantidad:0;
+				acuCamionetasC += (categoria=='C')?cantidad:0;
+				importeA += (categoria=='A')?importeVenta:0;
+				importeB += (categoria=='B')?importeVenta:0;
+				importeC += (categoria=='C')?importeVenta:0;
+				comisionA += (categoria=='A')?importeComision:0;
+				comisionB += (categoria=='B')?importeComision:0;
+				comisionC += (categoria=='C')?importeComision:0;
+				// REPORTE VENTA
 				cout << endl;
 				cout << "REPORTE" << endl;
 				cout << "======================================" << endl;
@@ -98,7 +117,16 @@ int main(){
 				break;	
 
 			case 3:
-				cout << "Proceso opción 3" << endl;
+				cout << endl;
+				cout << "REPORTE DE VENTAS" << endl;
+				cout << "==================================" << endl << endl;
+				cout << "CATEGORIA\tVENTAS\tCAMIONETAS\tIMPORTE\t\tCOMISION" << endl;
+				cout << "-------------------------------------------------------------------------------------" << endl;
+				cout << "   A   \t\t" << contVentasA << "\t" << acuCamionetasA << "\t\t" << importeA << "\t\t" << comisionA << endl;
+				cout << "   B   \t\t" << contVentasB << "\t" << acuCamionetasB << "\t\t" << importeB << "\t\t" << comisionB << endl;
+				cout << "   C   \t\t" << contVentasC << "\t" << acuCamionetasC << "\t\t" << importeC << "\t\t" << comisionC << endl;
+				cout << "-------------------------------------------------------------------------------------" << endl;
+				cout << endl;
 				break;					
 
 			case 4:
