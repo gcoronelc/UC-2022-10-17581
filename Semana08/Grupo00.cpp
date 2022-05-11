@@ -19,6 +19,9 @@ int main(){
 	double precio, porcDescuento1, porcDescuento2;
 	char sexo;
 	double importe, descuento1, descuento2, total;
+	// Variables para indicadores
+	int cantVentas = 0, cantVentasMujeresDcto2=0, cantVentasHombresDcto1=0;
+	double sumaTotalVentasBruto=0.0, sumaTotalVentasNeto=0.0, sumaDescuentos=0.0;
 	
 	// Control del menú de opciones
 	do{
@@ -124,6 +127,13 @@ int main(){
 				descuento1 = importe * porcDescuento1 / 100;
 				descuento2 = importe * porcDescuento2 / 100;
 				total = importe - descuento1 - descuento2;
+				// Actualizar indicadores
+				cantVentas++;
+				cantVentasMujeresDcto2 += (sexo=='F' && descuento2>0)?1:0;
+				cantVentasHombresDcto1 += (sexo=='M' && descuento1>0)?1:0;
+				sumaTotalVentasBruto += importe;
+				sumaTotalVentasNeto += total;
+				sumaDescuentos += (descuento1+descuento2);
 				// Reporte de la venta
 				cout << endl;
 				cout << "REPORTE DE VENTA" << endl;
@@ -136,7 +146,16 @@ int main(){
 				break;
 			// Opción 2: Reporte
 			case 2:
-				cout << "Proceso opción 2" << endl;
+				cout << endl;
+				cout << "REPORTE DE INCADORES DE VENTA" << endl;
+				cout << "==========================================================" << endl;
+				cout << "Cantidad total de ventas: " << cantVentas << endl;
+				cout << "Cantidad de ventas a clientes femeninos con el segundo descuento: " << cantVentasMujeresDcto2 << endl;
+				cout << "Cantidad de ventas a clientes masculinos solo con el primer descuento: " << cantVentasHombresDcto1 << endl;
+				cout << "Suma total de las ventas (Importe Bruto): " << sumaTotalVentasBruto << endl;
+				cout << "Suma total de las ventas (Importe Neto): " << sumaTotalVentasNeto << endl;
+				cout << "Suma de todos los descuentos realizados: " << sumaDescuentos << endl;
+				cout << endl;		
 				break;	
 			// Opción 3: Salir
 			case 3:
