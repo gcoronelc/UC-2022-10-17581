@@ -19,6 +19,13 @@ int fnSuma(int n1, int n2){
 	return suma; // Retorna el resultado
 }
 
+// Calcula la potencia
+int fnPotencia(int base, int exponente){
+	int potencia = 10000;
+	// Falta algo
+	return potencia;
+}
+
 
 // PROCEDIMIENTOS
 
@@ -47,6 +54,7 @@ int main(){
 	
 	// Proceso
 	suma = fnSuma(numero1, numero2);
+	potencia = fnPotencia(numero1, numero2);
 	
 	// Reporte
 	mostrarReporte(suma);
