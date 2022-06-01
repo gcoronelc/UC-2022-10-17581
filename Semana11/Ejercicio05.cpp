@@ -3,7 +3,8 @@ using namespace std;
 
 // Variables Globales
 double tipoCambio;
-
+int cantPaquetesPuntaCana=0, cantPaquetesSanAndres=0, cantPaquetesCancun=0;
+double totalPuntaCana=0.0, totalSanAndres=0.0, totalCancun=0.0, totalAcumulado=0.0;
 
 // Declaración de Funciones y Procedimientos
 void leerTipoCambio();
@@ -100,7 +101,8 @@ int leerOpcion(int opMin, int opMax){
 void procesoVenta(){
 	// Variables
 	int paquete, cantidad;
-	
+	double precio, porcDescuento;
+	double importe, descuento, total;	
 	// Lectura
 	cout << "LECTURA DE DATOS" << endl;
 	cout << "==============================" << endl;
@@ -113,15 +115,55 @@ void procesoVenta(){
 	paquete = leerOpcion(1,3);
 	cantidad = LeerEntero("Cantidad: ", 1);
 	// Proceso
-	
-	
+	// 1. Determinar el precio y porcentaje de descuento
+	switch(paquete){
+		case 1:
+			precio = 780.0;
+			porcDescuento = 3.5;
+			break;
+		case 2:
+			precio = 1350.0;
+			porcDescuento = 4.0;
+			break;
+		case 3:
+			precio = 2550.0;
+			porcDescuento = 4.5;
+			break;
+	}
+	// 2. Calculos
+	importe = precio * cantidad * tipoCambio;
+	descuento = importe * porcDescuento / 100.0;
+	total = importe - descuento;
+	// 3. Actualizar estadistica
+	cantPaquetesPuntaCana += (paquete==1)?cantidad:0;
+	cantPaquetesSanAndres += (paquete==2)?cantidad:0;
+	cantPaquetesCancun += (paquete==3)?cantidad:0;
+	totalPuntaCana += (paquete==1)?total:0;
+	totalSanAndres += (paquete==2)?total:0;
+	totalCancun += (paquete==3)?total:0;
+	totalAcumulado += total;
 	// Reporte
-	
+	cout << endl;
+	cout << "REPORTE VENTA" << endl;
+	cout << "=================================" << endl;
+	cout << "Importe: " << importe << endl;
+	cout << "Porc. descuento: " << porcDescuento << "%" << endl;
+	cout << "Descuento: " << descuento << endl;
+	cout << "Total a pagar: " << total << endl;
+	cout << endl;
 	
 }
 
 void procesoReporte(){
-	
+	cout << "REPORTE ESTADISTICO" << endl;
+	cout << "==================================================================" << endl;
+	cout << "PAQUETE\t\tCANTIDAD\tTOTAL" <<endl;
+	cout << "--------------------------------------------------------------------------" << endl;
+	cout << "Punta Cana\t" << cantPaquetesPuntaCana << "\t" << totalPuntaCana << endl;
+	cout << "San Andres\t" << cantPaquetesSanAndres << "\t" << totalSanAndres << endl;
+	cout << "Cancun\t\t" << cantPaquetesCancun << "\t" << totalCancun<< endl;
+	cout << "--------------------------------------------------------------------------" << endl;
+	cout << "Total acumulado: " << totalAcumulado << endl;
 }
 
 void procesoSalir(){
