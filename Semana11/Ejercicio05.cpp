@@ -7,7 +7,9 @@ using namespace std;
 // Declaración de Funciones y Procedimientos
 void mostrarMenu();
 int leerOpcion(int opMin, int opMax);
-
+void procesoVenta();
+void procesoReporte();
+void procesoSalir();
 
 int main(){
 	
@@ -23,21 +25,26 @@ int main(){
 		mostrarMenu();
 		opMenu = leerOpcion(1,3);
   
-		// Lectura de datos
+		// El proceso del menú
+		system("cls");
+		switch(opMenu){
+			case 1:
+				procesoVenta();
+				break;
+			case 2:
+				procesoReporte();
+				break;
+			case 3:
+				procesoSalir();
+				break;
+		}
 		
-		
-		// Validación
-	
-		// Proceso
-		
-		
-		// Reporte
-	
-	
+		if(opMenu==1 || opMenu==2){
+			system("pause");
+		}
 	} while(opMenu!=3);
 	
 	// Fin
-	system("pause");
 	return 0;
 }
 
@@ -65,3 +72,19 @@ int leerOpcion(int opMin, int opMax){
 	return op;
 }
 
+void procesoVenta(){
+	
+}
+
+void procesoReporte(){
+	
+}
+
+void procesoSalir(){
+	
+	cout << endl;
+	cout << "Fin del programa." << endl;
+	cout << "Nos vamos al mundial." << endl;
+	cout << endl;
+	
+}
