@@ -12,6 +12,7 @@ int leerOpcion(int opMin, int opMax);
 void procesoVenta();
 void procesoReporte();
 void procesoSalir();
+int LeerEntero(string etiqueta, int valorMinimo);
 
 int main(){
 	
@@ -53,6 +54,17 @@ int main(){
 
 // Implementación de Funciones y Procedimientos
 
+int LeerEntero(string etiqueta, int valorMinimo){
+	int valor;
+	do{
+		cout << etiqueta; cin  >> valor;		
+		if(valor<valorMinimo){
+			cout << "ERROR: el valor esta fuera de rango." << endl;
+		}
+	}while(valor<valorMinimo);
+	return valor;
+}
+
 void leerTipoCambio(){
 	system("cls");
 	do{
@@ -87,10 +99,19 @@ int leerOpcion(int opMin, int opMax){
 
 void procesoVenta(){
 	// Variables
+	int paquete, cantidad;
 	
 	// Lectura
-	
-	
+	cout << "LECTURA DE DATOS" << endl;
+	cout << "==============================" << endl;
+	cout << "PAQUETE TURISTICO" << endl;
+	cout << "-------------------------------" << endl;
+	cout << "1.- Punta Cana" << endl;
+	cout << "2.- San Andres" << endl;
+	cout << "3.- Cancun" << endl;
+	cout << "-------------------------------" << endl;
+	paquete = leerOpcion(1,3);
+	cantidad = LeerEntero("Cantidad: ", 1);
 	// Proceso
 	
 	
