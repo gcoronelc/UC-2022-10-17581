@@ -2,9 +2,11 @@
 using namespace std;
 
 // Variables Globales
+double tipoCambio;
 
 
 // Declaración de Funciones y Procedimientos
+void leerTipoCambio();
 void mostrarMenu();
 int leerOpcion(int opMin, int opMax);
 void procesoVenta();
@@ -20,6 +22,7 @@ int main(){
 	int opMenu;
 	
 	// Proceso general
+	leerTipoCambio();
 	do{
 		// El menú
 		mostrarMenu();
@@ -50,6 +53,16 @@ int main(){
 
 // Implementación de Funciones y Procedimientos
 
+void leerTipoCambio(){
+	system("cls");
+	do{
+		cout << "Tipo de cambio del día: "; cin >> tipoCambio;
+		if(tipoCambio<=0.0){
+			cout << "Error, debe ser un valor positivo." << endl;
+		}
+	}while(tipoCambio<=0.0);
+}
+
 void mostrarMenu(){
 	system("cls");
 	cout << "\tMENU DE OPCIONES" << endl;
@@ -73,6 +86,16 @@ int leerOpcion(int opMin, int opMax){
 }
 
 void procesoVenta(){
+	// Variables
+	
+	// Lectura
+	
+	
+	// Proceso
+	
+	
+	// Reporte
+	
 	
 }
 
