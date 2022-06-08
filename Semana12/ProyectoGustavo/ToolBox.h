@@ -32,4 +32,18 @@ char LeerSexo(string etiqueta){
 } 
 
 
+/*
+ *  Lee un valor Double.
+*/
+int LeerDouble(string etiqueta, int valorMinimo){
+	double valor;
+	do{
+		cout << etiqueta; cin  >> valor;		
+		if(valor<valorMinimo){
+			cout << "ERROR: el valor esta fuera de rango." << endl;
+		}
+	}while(valor<valorMinimo);
+	return valor;
+}
+
 

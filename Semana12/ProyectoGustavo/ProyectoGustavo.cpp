@@ -55,11 +55,14 @@ void PresentarMenu(){
 void ProcesarVenta(){
 	// Variables
 	char sexo, tipo;
+	double precio;
+	int cantidad;
 	// Lectura de datos
 	cout << "LECTURA DE DATOS" << endl;
 	cout << "===========================" << endl;
 	sexo = LeerSexo("Sexo del cliente: ");
 	tipo = LeeTipoProducto();
+	precio = LeerDouble("Ingrese precio: ");
 	// Proceso
 	
 	// Reporte venta
