@@ -48,8 +48,8 @@ void PresentarMenu(){
 	cout << "\tTIENDA TODO BARATO" << endl;
 	cout << "\tMENU DE OPCIONES" << endl;
 	cout << "================================" << endl;
-	cout << "\t1.- Venta" << endl;
-	cout << "\t2.- Reporte" << endl;
+	cout << "\t1.- Venta " << endl;
+	cout << "\t2.- Reporte estadistico" << endl;
 	cout << "\t3.- Salir" << endl;
 	cout << "================================" << endl;
 	cout << endl;
@@ -95,7 +95,16 @@ void ProcesarVenta(){
 }
 
 void ReporteEstadistico(){
-	cout << "Falta ..." << endl;
+	cout << endl;
+	cout << "REPORTE ESTADISTICO" << endl;
+	cout << "=====================================================================" << endl;
+	cout << "\tTIPO\t\tNro.VENTAS\tIMPORTE" << endl;
+	cout << "---------------------------------------------------" << endl;
+	cout << "\tMOUSE\t\t" << VentasTipoA << endl; 
+	cout << "\tTECLADO\t\t" << VentasTipoB << endl; 
+	cout << "\tDISCO DURO\t" << VentasTipoC << endl; 
+	cout << "\tMONITOR\t\t" << VentasTipoD << endl; 
+	cout << "---------------------------------------------------" << endl;
 }
 
 void FinPrograma(){
