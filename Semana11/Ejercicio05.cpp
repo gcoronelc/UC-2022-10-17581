@@ -16,20 +16,16 @@ void procesoSalir();
 int LeerEntero(string etiqueta, int valorMinimo);
 
 int main(){
-	
 	// Configuracion
 	setlocale(LC_CTYPE,"Spanish");
-	
 	// Variables
 	int opMenu;
-	
 	// Proceso general
 	leerTipoCambio();
 	do{
 		// El menú
 		mostrarMenu();
 		opMenu = leerOpcion(1,3);
-  
 		// El proceso del menú
 		system("cls");
 		switch(opMenu){
@@ -43,7 +39,6 @@ int main(){
 				procesoSalir();
 				break;
 		}
-		
 		if(opMenu==1 || opMenu==2){
 			system("pause");
 		}
