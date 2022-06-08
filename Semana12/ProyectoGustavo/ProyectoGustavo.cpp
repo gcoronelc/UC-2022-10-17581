@@ -8,6 +8,7 @@ void PresentarMenu();
 void ProcesarVenta();
 void ReporteEstadistico();
 void FinPrograma();
+char LeeTipoProducto();
 
 int main(){
 	// Configuracion
@@ -52,7 +53,16 @@ void PresentarMenu(){
 }
 
 void ProcesarVenta(){
-	cout << "Falta ..." << endl;
+	// Variables
+	char sexo, tipo;
+	// Lectura de datos
+	cout << "LECTURA DE DATOS" << endl;
+	cout << "===========================" << endl;
+	sexo = LeerSexo("Sexo del cliente: ");
+	tipo = LeeTipoProducto();
+	// Proceso
+	
+	// Reporte venta
 }
 
 void ReporteEstadistico(){
@@ -62,5 +72,31 @@ void ReporteEstadistico(){
 void FinPrograma(){
 	cout << "FIN DEL PROGRAMA" << endl;
 	cout << "Esperamos su pronta visita" << endl;
-	cout << "Que tenga un maravilloso día" << endl;
+	cout << "Que tenga un maravilloso día" << endl << endl;
 }
+
+char LeeTipoProducto(){
+	char tipo;
+	cout << "Tipo de producto" << endl;
+	cout << "----------------------------" << endl;
+	cout << "A. Mouse" << endl;
+	cout << "B. Teclado" << endl;
+	cout << "C. Disco Duro" << endl;
+	cout << "D. Monitor" << endl;
+	cout << "----------------------------" << endl;
+	do{
+		cout << "Opción: "; cin >> tipo;
+		tipo = toupper(tipo);
+		if(tipo!='A' && tipo!='B' && tipo!='C' && tipo!='D'){
+			cout << "Error, dato incorrecto." << endl;
+		}
+	}while(tipo!='A' && tipo!='B' && tipo!='C' && tipo!='D');
+	return tipo;
+}
+
+
+
+
+
+
+

@@ -16,7 +16,20 @@ int LeerOpcion(int opMin, int opMax){
 	return op;
 }
 
-
+/*
+ * Lee el sexo de una persona.
+*/
+char LeerSexo(string etiqueta){
+	char rpta;
+	do{
+		cout << etiqueta; cin >> rpta;
+		rpta = toupper(rpta);
+		if(rpta!='M' && rpta!='F'){
+			cout << "Error, el sexo debe ser M o F." << endl;
+		}
+	}while(rpta!='M' && rpta!='F');
+	return rpta;
+} 
 
 
 
