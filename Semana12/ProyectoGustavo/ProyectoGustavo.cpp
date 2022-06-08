@@ -62,7 +62,8 @@ void ProcesarVenta(){
 	cout << "===========================" << endl;
 	sexo = LeerSexo("Sexo del cliente: ");
 	tipo = LeeTipoProducto();
-	precio = LeerDouble("Ingrese precio: ");
+	precio = LeerDouble("Ingrese precio: ",1.0);
+	cantidad = LeerEntero("Ingrese cantidad: ",1);
 	// Proceso
 	
 	// Reporte venta

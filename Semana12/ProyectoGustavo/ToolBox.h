@@ -46,4 +46,17 @@ int LeerDouble(string etiqueta, int valorMinimo){
 	return valor;
 }
 
+/*
+ * Lee un valor entero
+*/
+int LeerEntero(string etiqueta, int valorMinimo){
+	int valor;
+	do{
+		cout << etiqueta; cin  >> valor;		
+		if(valor<valorMinimo){
+			cout << "ERROR: el valor esta fuera de rango." << endl;
+		}
+	}while(valor<valorMinimo);
+	return valor;
+}
 
