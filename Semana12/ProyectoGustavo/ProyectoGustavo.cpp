@@ -10,6 +10,9 @@ void ReporteEstadistico();
 void FinPrograma();
 char LeeTipoProducto();
 
+// Datos estadisticos
+int VentasTipoA=0, VentasTipoB=0, VentasTipoC=0, VentasTipoD=0;
+
 int main(){
 	// Configuracion
 	setlocale(LC_CTYPE,"Spanish");
@@ -83,6 +86,12 @@ void ProcesarVenta(){
 	cout << "Monto bruto: " << montoBruto << endl;
 	cout << "Descuento: " << descuento << endl;
 	cout << "Monto a pagar: " << montoPagar << endl << endl;
+	// Calcular datos estadisticos
+	VentasTipoA += (tipo=='A')?1:0;
+	VentasTipoB += (tipo=='B')?1:0;
+	VentasTipoC += (tipo=='C')?1:0;
+	VentasTipoD += (tipo=='D')?1:0;
+
 }
 
 void ReporteEstadistico(){
