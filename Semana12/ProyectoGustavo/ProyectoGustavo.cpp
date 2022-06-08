@@ -55,7 +55,8 @@ void PresentarMenu(){
 void ProcesarVenta(){
 	// Variables
 	char sexo, tipo;
-	double precio;
+	double precio, porcDescuento;
+	double montoBruto, descuento, montoPagar;
 	int cantidad;
 	// Lectura de datos
 	cout << "LECTURA DE DATOS" << endl;
@@ -65,8 +66,23 @@ void ProcesarVenta(){
 	precio = LeerDouble("Ingrese precio: ",1.0);
 	cantidad = LeerEntero("Ingrese cantidad: ",1);
 	// Proceso
-	
+	// 1.- Determinar el porcentaje de descuento
+	porcDescuento = 0.0;
+	porcDescuento = (tipo=='A')?8.0:porcDescuento;
+	porcDescuento = (tipo=='B')?10.0:porcDescuento;
+	porcDescuento = (tipo=='C')?12.0:porcDescuento;
+	porcDescuento = (tipo=='D')?15.0:porcDescuento;
+	// 2.- Calculos de la venta
+	montoBruto = precio * cantidad;
+	descuento = montoBruto * porcDescuento / 100.0;
+	montoPagar = montoBruto - descuento;
 	// Reporte venta
+	cout << endl;
+	cout << "REPORTE DE VENTA" << endl;
+	cout << "==============================================" << endl;
+	cout << "Monto bruto: " << montoBruto << endl;
+	cout << "Descuento: " << descuento << endl;
+	cout << "Monto a pagar: " << montoPagar << endl << endl;
 }
 
 void ReporteEstadistico(){
