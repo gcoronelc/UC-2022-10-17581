@@ -12,6 +12,7 @@ char LeeTipoProducto();
 
 // Datos estadisticos
 int VentasTipoA=0, VentasTipoB=0, VentasTipoC=0, VentasTipoD=0;
+double AcumuladoTipoA=0.0, AcumuladoTipoB=0.0, AcumuladoTipoC=0.0, AcumuladoTipoD=0.0;
 
 int main(){
 	// Configuracion
@@ -91,6 +92,7 @@ void ProcesarVenta(){
 	VentasTipoB += (tipo=='B')?1:0;
 	VentasTipoC += (tipo=='C')?1:0;
 	VentasTipoD += (tipo=='D')?1:0;
+	
 
 }
 
