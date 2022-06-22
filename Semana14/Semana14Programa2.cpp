@@ -1,17 +1,16 @@
+#include <iostream>
+using namespace std;
+
 void hanoi(int n,char org,char aux,char des)
 { 
-  if(n == 1)
-	
-	cout<< org << " -> " << des;
-  
-  else
-      {
-         hanoi(n-1,org,des,aux);
-         
-		 cout<< org << " -> " << des;	
-         
-		 hanoi(n-1,aux,org,des);
-      }
+	if(n == 1)
+		cout<< org << " -> " << des << endl;
+	else
+	{
+		hanoi(n-1,org,des,aux);
+		cout<< org << " -> " << des << endl;	
+		hanoi(n-1,aux,org,des);
+	}
 }
 
 int main ()
