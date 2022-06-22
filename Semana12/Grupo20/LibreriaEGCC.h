@@ -1,8 +1,8 @@
-#include<iostream>
+﻿#include<iostream>
 using namespace std;
 
 
-// Leer opci�n
+// Leer opción
 int leerOpcion(int opMin, int opMax){
 	int opcion;
 	do{
