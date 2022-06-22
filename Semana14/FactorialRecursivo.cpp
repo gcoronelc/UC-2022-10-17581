@@ -17,10 +17,22 @@ int main(){
 	
 	// Variables
 	int n, fact;
+	string ns;
   
 	// Lectura de datos
-	cout << "Valor de \"n\": ";
-	cin  >> n;
+	do{
+		n=-1;
+		cout << "Valor de \"n\": "; cin  >> ns;
+		if(isalpha(ns[0])){
+			cout << "Error, se requiere un número, no un caracter." << endl;
+			continue;
+		}
+		n = stoi(ns);
+		if(n<0){
+			cout << "Error, se requiere un número mayor que cero." << endl;
+		}
+	}while(n < 0);
+	
 	
 	// Proceso
 	fact = factorial(n);
